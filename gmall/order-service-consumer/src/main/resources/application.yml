@@ -1,0 +1,10 @@
+dubbo:
+  application:
+    name: order-service-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    check: false
+  consumer:
+    check: false
+server:
+  port: 8002

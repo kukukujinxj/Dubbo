@@ -1,0 +1,32 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':gmall-api')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    // https://mvnrepository.com/artifact/com.alibaba/dubbo
+//    compile group: 'com.alibaba', name: 'dubbo', version: '2.6.6'
+    // https://mvnrepository.com/artifact/org.apache.curator/curator-framework
+    compile group: 'org.apache.curator', name: 'curator-framework', version: '2.13.0'
+    // https://mvnrepository.com/artifact/org.apache.curator/curator-recipes
+    compile group: 'org.apache.curator', name: 'curator-recipes', version: '2.13.0'
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.39.Final'
+    // https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter
+    compile group: 'org.apache.dubbo', name: 'dubbo-spring-boot-starter', version: '2.7.3'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.4.7.RELEASE'
+
+}

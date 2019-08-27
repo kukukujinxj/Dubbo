@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="order-service-consumer.gmall-interface.main" target="1.8" />
+      <module name="order-service-consumer.gmall-interface.test" target="1.8" />
+      <module name="user-service-provider.gmall-interface.main" target="1.8" />
+      <module name="user-service-provider.gmall-interface.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
